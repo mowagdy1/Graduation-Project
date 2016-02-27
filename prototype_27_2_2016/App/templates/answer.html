@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <title>
+            es2lni v.1 - Answers
+        </title>
+        <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style00.css') }}">
+</head>
+    <body>
+        <div class="body0">
+            
+            <div id="headerDiv">
+                <div id="header1">
+                    <div id="searchDivTop">
+                        <form action="#" name="topForm">
+                            <div style="float: left;"> <input class="txtField" id="topTxtFld" placeholder="{{question}}"> </div>
+                            <div class="btnSearch" id="topSearchBtn">?!</div>
+                        </form>
+                    </div>
+                    <div id="topLogoDiv">
+                        <img src="{{ url_for('static', filename='imgs/logoEs2lni_.png') }}">
+                    </div>
+                    
+                 
+                </div>
+            </div>
+            <div id="body1">
+                <div id="bodyContents">
+               
+                    <code><pre>
+                        {% for result in results["results"]["bindings"] %}
+                        <ul> {{ result }} </ul>
+                        {% endfor %}
+                    </pre></code>
+                          
+                </div>
+            </div>
+            
+            
+        </div>
+        
+        
+
+        
+
+        
+    </body>
+</html>
